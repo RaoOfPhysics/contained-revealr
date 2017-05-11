@@ -85,7 +85,7 @@ ggplotly(p)
 
 ## R Markdown with embedded R code
 
-- [Source](https://raw.githubusercontent.com/RaoOfPhysics/contained-revealr/gh-pages/index.Rmd)
+- [Source](https://raw.githubusercontent.com/RaoOfPhysics/contained-revealr/master/index.Rmd)
 - Hosted on GitHub: [RaoOfPhysics/contained-revealr](https://github.com/RaoOfPhysics/contained-revealr)
 - Displayed using [GitHub Pages](https://pages.github.com/): [raoofphysics.github.io/contained-revealr](https://raoofphysics.github.io/contained-revealr)
 - Annotatable using [Hypothesis](https://hypothes.is):
