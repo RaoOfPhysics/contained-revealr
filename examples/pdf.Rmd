@@ -1,0 +1,106 @@
+---
+title: "Interactive, annotatable, code-driven presentations"
+author: "Achintya Rao"
+date: "19 May 2017"
+output: 
+    pdf_document:
+        toc: true
+        number_sections: true
+always_allow_html: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(plotly)
+```
+
+# The inspiration!
+
+Figure 1 (somewhere in this document)
+
+![D3 visualisations by Eamonn Maguire](../images/d3.gif)
+
+- [Creating Visualizations with D3](http://antarctic-design.co.uk/biovis-workshop15/) by [Eamonn Maguire](https://github.com/eamonnmag)
+
+# Using R code in your presentation
+
+## Example of some code
+
+```{r cars}
+summary(mtcars)
+```
+
+## Inline code
+
+So, `sqrt(81)*4*pi` becomes `r sqrt(81)*4*pi`.
+
+## Import some data
+
+```{r}
+I_jean <- read.delim("http://bit.ly/avml_ggplot2_data")
+head(I_jean)
+```
+
+- Source: [https://jofrhwld.github.io/avml2012/](https://jofrhwld.github.io/avml2012/)
+
+## Static plots (only)
+
+```{r, echo=FALSE}
+
+p <- ggplot(mtcars, aes(x = factor(1), fill = factor(cyl))) + 
+  geom_bar(width = 0.8, position = "dodge", colour = "black")
+
+p
+```
+
+# Making a [reveal.js](http://lab.hakim.se/reveal-js/) presentation
+
+## [R Markdown](http://rmarkdown.rstudio.com/) with embedded [R](https://www.r-project.org/) code
+
+- [Source](https://raw.githubusercontent.com/RaoOfPhysics/contained-revealr/gh-pages/index.Rmd)
+- Hosted on GitHub: [RaoOfPhysics/contained-revealr](https://github.com/RaoOfPhysics/contained-revealr)
+- Displayed using [GitHub Pages](https://pages.github.com/): [raoofphysics.github.io/contained-revealr](https://raoofphysics.github.io/contained-revealr)
+- Annotatable using [Hypothesis](https://hypothes.is):
+    - Add `<script src="https://hypothes.is/embed.js" async></script>`
+
+## The source file itself
+
+- Create a new `R Markdown` file named `index.Rmd`
+    - Select reveal.js from templates
+- Add [YAML](http://www.yaml.org/) frontmatter!
+- Instructions for reveal.js presentations: [rmarkdown.rstudio.com/revealjs_presentation_format.html](http://rmarkdown.rstudio.com/revealjs_presentation_format.html)
+- Create sections and add content+code
+- Knit your presentation!
+
+# "But I hate / don't use R…"
+
+## Other "engines" for code chunks
+
+| Language | In RMarkdown | Plotly available |
+|-----:|:-----:|:-----:|
+| Python      | [Yes](http://rmarkdown.rstudio.com/authoring_knitr_engines.html#python) | [Yes](https://plot.ly/python/getting-started/) |
+| JavaScript | [Yes](http://rmarkdown.rstudio.com/authoring_knitr_engines.html#javascript) | [Yes](https://plot.ly/javascript/getting-started/) |
+| SQL | [Yes](http://rmarkdown.rstudio.com/authoring_knitr_engines.html#sql) | No |
+| Bash | [Yes](http://rmarkdown.rstudio.com/authoring_knitr_engines.html#bash) | No |
+
+More: http://rmarkdown.rstudio.com/authoring_knitr_engines.html
+
+# "But I don't want to install R and its packages…"
+
+## [RStudio](https://www.rstudio.com/) via [Docker](https://www.docker.com/)
+
+Figure 2 (somewhere in this document)
+
+![RStudio via Docker](../images/rstudio.png)
+
+## Using RStudio in your browser
+
+- **Caveat!** Non-R engines don't work out of the box
+- Create a directory for your project
+- Add this [`Dockerfile`](https://github.com/RaoOfPhysics/contained-revealr/blob/master/Dockerfile) and this [`docker-compose.yml`](https://github.com/RaoOfPhysics/contained-revealr/blob/master/docker-compose.yml) to the directory
+- Run `$ docker-compose up -d`
+- Open RStudio in your browser at `localhost:8787` or `0.0.0.0:8787`
+- Log in with "`rstudio`" as both the username and password
+- To shutdown: `$ docker-compose down`
+
+# Questions?
