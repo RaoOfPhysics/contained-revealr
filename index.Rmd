@@ -162,18 +162,18 @@ More: http://rmarkdown.rstudio.com/authoring_knitr_engines.html
 
 <section><h1>Backup</h1>
 
-## HTML
+## [HTML](https://raoofphysics.github.io/contained-revealr/examples/html.html)
 
 ![HTML](images/html.gif)
 
-## PDF
+## [PDF](https://raoofphysics.github.io/contained-revealr/examples/pdf.pdf)
 
 ![PDF](images/pdf.gif)
 
-## Bookdown
+## [Bookdown](https://raoofphysics.github.io/contained-revealr/examples/bookdown-example.html)
 
 ![Bookdown](images/bookdown.gif)
 
-## R Notebooks
+## [R Notebooks](https://raoofphysics.github.io/contained-revealr/examples/notebook.nb.html)
 
 ![R Notebook](images/rnotebook.gif)
