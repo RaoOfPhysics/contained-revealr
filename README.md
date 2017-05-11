@@ -11,7 +11,7 @@ Self-contained repo for interactive stats-driven presentations
 
 Let's make some interactive presentations!
 
-You can view the presentation here: [https://via.hypothes.is/https://raoofphysics.github.io/contained-revealr/](https://via.hypothes.is/https://raoofphysics.github.io/contained-revealr/)
+You can view the presentation here: [https://raoofphysics.github.io/contained-revealr/](https://raoofphysics.github.io/contained-revealr/)
 
 The slides should also be available on a mobile browser, although Firefox on Android isn't loading the interactive plots for some reason. Against my better judgement, I recommend you use Chrome on Android to view the content.
 
