@@ -112,7 +112,7 @@ More: http://rmarkdown.rstudio.com/authoring_knitr_engines.html
 
 ## "But I don't want to install R and its packages…"
 
-### [RStudio](https://www.rstudio.com/) via [Docker](https://www.docker.com/)
+### RStudio via Docker
 
 ![RStudio via Docker](https://raw.githubusercontent.com/RaoOfPhysics/contained-revealr/master/images/rstudio.png)
 
