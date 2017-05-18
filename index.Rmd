@@ -156,11 +156,7 @@ More: http://rmarkdown.rstudio.com/authoring_knitr_engines.html
 
 ---
 
-<section><h1>Questions?</h1></section>
-
----
-
-<section><h1>Backup</h1>
+<section><h1>Other kinds of output</h1>
 
 ## [HTML](https://raoofphysics.github.io/contained-revealr/examples/html.html)
 
@@ -177,3 +173,9 @@ More: http://rmarkdown.rstudio.com/authoring_knitr_engines.html
 ## [R Notebooks](https://raoofphysics.github.io/contained-revealr/examples/notebook.nb.html)
 
 ![R Notebook](images/rnotebook.gif)
+
+</section>
+
+---
+
+<section><h1>Questions?</h1></section>
